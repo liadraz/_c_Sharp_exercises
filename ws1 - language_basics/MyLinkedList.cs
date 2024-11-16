@@ -4,8 +4,13 @@ using System.Collections.Generic;
 namespace ws1
 {
     /*
-     *  Implenetation of a Single Linked List
-     * 
+     * Implementation of a Singly Linked List
+     *
+     * Nodes are pushed to the end of the linked list.
+     * Nodes are popped from the end of the list.
+     * The last node is a dummy node, always pointing to null, and is hidden from the user.
+     * Users can iterate through the list using a "for each" construct.
+     *
      */
     public class MyLinkedList
     {
@@ -30,12 +35,13 @@ namespace ws1
         public MyLinkedList()
         {
             // List will be constructed as follows
-            //          ITERATOR
-            //              V
+            //  ITERATOR
+            //    V
             //  HEAD ---> TAIL ---> NULL
 
             head = new Node(0);
             tail = new Node(0);
+            iterator = new Node(0);
 
             head.next = tail;
             iterator = head;
@@ -50,14 +56,23 @@ namespace ws1
                 return;
             }
 
+            toAdd.next = iterator.next;
             iterator.next = toAdd;
             iterator = toAdd;
-            iterator.next = tail;
 
             counter++;
         }
 
-        //Pop();
+        //public void Pop()
+        //{  
+        //    if (IsEmpty())
+        //    {
+        //        Console.WriteLine("Failed: List is empty");
+        //        return;
+        //    }
+
+        //    counter--;
+        //}
 
         public object Peek()
         {
