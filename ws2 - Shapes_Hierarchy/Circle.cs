@@ -16,11 +16,9 @@ namespace ws2___Shapes_Hierarchy
             Radius = radius;
         }
 
-        public Circle(double radius, string color, bool isFilled)
+        public Circle(double radius, string color, bool isFilled) : base(color, isFilled)
         {
             Radius = radius;
-            Color = color;
-            IsFilled = isFilled;
         }
 
         public override double Area()

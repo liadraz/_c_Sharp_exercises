@@ -8,14 +8,11 @@ namespace ws2___Shapes_Hierarchy
 {
     public abstract class Shape
     {
-        public string Color { get; set; } = string.Empty;
-        public bool IsFilled {  get; set; }
+        public string Color { get; set; } = String.Empty;
+        public bool IsFilled { get; set; }
 
-        public Shape()
-        {
-            Color = "green";
-            IsFilled = true;
-        }
+        public Shape() : this("green", true) { }
+
         public Shape(string color, bool isFilled)
         {
             Color = color;
