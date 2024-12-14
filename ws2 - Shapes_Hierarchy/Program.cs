@@ -1,9 +1,16 @@
-﻿namespace ws2___Shapes_Hierarchy
+﻿namespace ws2_ShapesHierarchy
 {
-    public class Shapes
+    public class ShapesHierarchy
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
+            ComplexShape shapes = new ComplexShape();
+
+            shapes.Add(new Circle());
+            shapes.Add(new Circle());
+            shapes.Add(new Rectangle());
+
+            Console.WriteLine($"{shapes.Area()}");
 
         }
     }

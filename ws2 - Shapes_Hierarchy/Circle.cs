@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ws2___Shapes_Hierarchy
+namespace ws2_ShapesHierarchy
 {
     public class Circle : Shape
     {
