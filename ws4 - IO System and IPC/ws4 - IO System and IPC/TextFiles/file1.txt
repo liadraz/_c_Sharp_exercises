@@ -1,0 +1,5 @@
+Hello, this is file 1.
+This is a sample text file.
+It contains multiple lines of text.
+Some lines are different from the second file.
+End of file 1.

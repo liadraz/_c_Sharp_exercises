@@ -1,5 +1,5 @@
 
-# Requirements
+# Process Ping Ping Exercise
 
 Create 2 applications - Ping & Pong
 * using a named pipe
@@ -39,3 +39,9 @@ They are simpler and typically used for one-way communication.
 NOTE Since anonymous pipes are unidirectional, you must create separate pipes for two-way communication.
 
 ## Mapped File
+
+
+# Text File Comparison Exercise
+
+Make an application that receives the path of two text files 
+and prints the lines that are different between them to the screen. 
