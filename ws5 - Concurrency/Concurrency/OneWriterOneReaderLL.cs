@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProducerConsumerMonitor
 {
-    class ThreadSafeLinkedList<T>
+    public class OneWriterOneReaderLL<T>
     {
         private readonly LinkedList<T> _list = new();
         private readonly object _lock = new();

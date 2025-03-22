@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ProducerConsumerBusyWait
 {
-    static class GlobalIntMonitr
+    static class GlobalIntBusyWait
     {
         static volatile int _sharedDate = -1;
         static volatile bool _hasdata = false;
